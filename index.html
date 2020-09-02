@@ -28,10 +28,16 @@
     <style>
         @supports (-webkit-text-stroke: 1px black) {
             .strock-header {
-                -webkit-text-stroke: 2px black;
-                -webkit-text-fill-color: white;
+                text-shadow: 4px 4px 3px rgb(105, 105, 105);
+                -webkit-text-stroke: 1px black;
+                /*-webkit-text-fill-color: red;*/
+                -webkit-animation: fill 0.5s infinite alternate;
             }
         }
+        /*@-webkit-keyframes fill {*/
+        /*    from { -webkit-text-fill-color: #AACCFF; }*/
+        /*    to { -webkit-text-fill-color: #AACCFF; }*/
+        /*}*/
     </style>
 
 </head>
@@ -69,10 +75,10 @@
 <!-- Header -->
 <header class="masthead d-flex">
     <div class="container text-center my-auto">
-        <h1 class="mb-1 text-white strock-header">Your code on the Fastlane:
+        <h1 class="mb-1 strock-header text-capitalize text-white">Your code on the Fastlane:
             catch up
             with everyone by using the new versions of Java</h1>
-        <h3 class="mb-5 text-white strock-header">
+        <h3 class="mb-5 text-white strock-header text-capitalize">
             <em>Join this LIVE online course</em>
         </h3>
         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find
