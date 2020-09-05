@@ -40,6 +40,28 @@
         /*    from { -webkit-text-fill-color: #AACCFF; }*/
         /*    to { -webkit-text-fill-color: #AACCFF; }*/
         /*}*/
+        .quote-card {
+            background: #fff;
+            color: #222222;
+            padding: 20px;
+            padding-left: 50px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            /*min-height: 120px;*/
+        }
+
+        .quote-card:after {
+            font-family: Georgia, serif;
+            content: "”";
+            position: absolute;
+            bottom: -110px;
+            line-height: 100px;
+            right: -32px;
+            font-size: 25em;
+            color: rgba(238, 238, 238, 0.8);
+            font-weight: normal;
+        }
     </style>
 
 </head>
@@ -350,7 +372,7 @@
                                     class="rounded-circle img-thumbnail"
                                     src="img/mukit.jpg"
                                     alt="" width="75">
-                                <div class="media-body ml-3">
+                                <div class="media-body ml-3 quote-card">
                                     <blockquote class="blockquote border-0 p-0">
 
                                         <p class="font-italic lead"><i
@@ -381,13 +403,13 @@
                                 </div>
                             </div>
 
-                            <div class="media">
+                            <div class="media" >
                                 <img class="rounded-circle img-thumbnail"
                                      src="img/nowshed_tn.jpg"
                                      alt="Md. Nowshad Hasan Apu, Software Engineer at G-Technologies"
                                      width="75"/>
 
-                                <div class="media-body ml-3">
+                                <div class="media-body ml-3 quote-card">
                                     <blockquote
                                             class="blockquote border-0 p-0">
                                         <p class="font-italic lead">
@@ -433,7 +455,7 @@
                                         class="rounded-circle img-thumbnail"
                                         src="img/ajoy_kar.jpg"
                                         alt="" width="75">
-                                    <div class="media-body ml-3">
+                                    <div class="media-body ml-3 quote-card">
                                         <blockquote
                                                 class="blockquote border-0 p-0">
                                             <p class="font-italic lead"><i
